@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[47257,["/GPS-Camera-app/_next/static/chunks/158myu8e_yme3.js"],"ClientPageRoot"]
-3:I[74647,["/GPS-Camera-app/_next/static/chunks/158myu8e_yme3.js","/GPS-Camera-app/_next/static/chunks/19ygz9u9wb8q4.js"],"default"]
+3:I[74647,["/GPS-Camera-app/_next/static/chunks/158myu8e_yme3.js","/GPS-Camera-app/_next/static/chunks/3bd6ck1eltc2h.js"],"default"]
 6:I[97367,["/GPS-Camera-app/_next/static/chunks/158myu8e_yme3.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/GPS-Camera-app/_next/static/chunks/19ygz9u9wb8q4.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qW09Mkz2eWzQdx235rQLC"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/GPS-Camera-app/_next/static/chunks/3bd6ck1eltc2h.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"PI6Bb9EDhd8sBb_rc0jAo"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
