@@ -1,10 +1,17 @@
-const CACHE_NAME = 'gps-camera-v1';
+const CACHE_NAME = 'gps-camera-v2';
 
-// Very basic service worker that caches nothing but satisfies the installability requirement.
-// We are bypassing caching for simplicity and relying on the browser's default caching,
-// but Android requires a fetch event listener to show the install prompt.
 self.addEventListener('install', (event) => {
   self.skipWaiting();
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll([
+        '/GPS-Camera-app/',
+        '/GPS-Camera-app/manifest.json',
+        '/GPS-Camera-app/icon-192.png',
+        '/GPS-Camera-app/icon-512.png'
+      ]);
+    })
+  );
 });
 
 self.addEventListener('activate', (event) => {
@@ -12,6 +19,10 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // Let the browser handle the fetch normally
-  event.respondWith(fetch(event.request));
+  // Network-first strategy: try network, fallback to cache if offline
+  event.respondWith(
+    fetch(event.request).catch(() => {
+      return caches.match(event.request);
+    })
+  );
 });
